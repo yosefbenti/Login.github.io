@@ -1,0 +1,26 @@
+*{
+    margin: 5px;
+    box-sizing: border-box;
+}
+body {
+    background: whitesmoke;
+    text-align: center;
+    color: green;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+}
+.left{
+    background-color: rgb(231, 227, 227);
+    padding: 3em;
+    display:flex;
+    flex: 1.5;
+    height: 50em;
+}
+.right{
+    background-color: white;
+    padding: 3em;
+    flex: 1;
+    height: 50em;
+}
