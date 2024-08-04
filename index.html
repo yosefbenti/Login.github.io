@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
-    <link rel="stylesheet" href="CSS/loginstyle.css">
+    <link rel="stylesheet" href="CSS/loginstyle.css" />
 </head>
+
 <body>
     <div class="container">
         <div class="left-panel">
+            <div class="svg-container">
+                <svg viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="none" stroke="lightgrey" d="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+                    <circle r="5" fill="green">
+                        <animateMotion dur="10s" repeatCount="indefinite"
+                            path="M20,50 C20,-50 180,150 180,50 C180-50 20,150 20,50 z" />
+                    </circle>
+                </svg>
+            </div>
             <div class="logo-container">
-              <img class="logo" src="PUBLIC/IMAGE/Ethiopian_Acadamy_logo2.jpg" width="250" height="250" alt="Ethiopian Academy Logo"> 
+                <img class="logo" src="PUBLIC/IMAGE/Ethiopian_Acadamy_logo2.jpg" width="250" height="250"
+                    alt="Ethiopian Academy Logo" />
+                <h3>ETHIO_SCHOOL_ACADAMY</h3>
             </div>
         </div>
         <div class="right-panel">
@@ -21,19 +34,22 @@
             <form class="login-form" action="">
                 <div class="form-group">
                     <label for="Email" class="form-label">Email</label>
-                    <input type="email" class="form-input" id="Email" required>
+                    <input type="email" class="form-input" id="Email" required />
                 </div>
                 <div class="form-group">
                     <label for="Password" class="form-label">Password</label>
-                    <input type="password" class="form-input" id="Password" required>
+                    <input type="password" class="form-input" id="Password" required />
                 </div>
                 <button type="submit" class="submit-button">Login</button>
             </form>
             <div class="alternative-options">
                 <p class="alternative-text">or continue with...</p>
-                <p class="sign-up-text">Don't have an account? <a href="#" class="sign-up-link">Sign Up</a></p>
+                <p class="sign-up-text">
+                    Don't have an account? <a href="#" class="sign-up-link">Sign Up</a>
+                </p>
             </div>
         </div>
     </div>
 </body>
+
 </html>

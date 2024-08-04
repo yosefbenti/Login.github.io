@@ -11,7 +11,7 @@ html, body {
 body {
     background: #f4feff;
     color: green;
-    font-family: Arial, sans-serif;
+    font-family: 'Bookman Old Style', serif;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,7 @@ body {
     flex: 1.5;
     background-color: #f4feff;
     padding: 3em;
+    flex-direction: column; /* Ensure elements stack vertically */
 }
 
 .right-panel {
@@ -48,6 +49,7 @@ body {
 
 .logo-container {
     display: flex;
+    flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -58,6 +60,20 @@ body {
     width: 300px;
     height: 300px;
     border-radius: 50%;
+}
+
+.academy-name {
+    margin-top: 20px; /* Space between the image and the text */
+    font-size: 1.5em;
+    color: #333;
+    text-align: center;
+}
+
+.svg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Align center horizontally */
+    margin-bottom: 20px; /* Add some space between the SVG and the image */
 }
 
 .header {
@@ -161,6 +177,13 @@ body {
 
 .sign-up-link:hover {
     text-decoration: underline;
+}
+
+svg {
+    display: block;
+    width: 100%;
+    height: auto;
+    color: green;
 }
 
 /* Responsive Design */
