@@ -1,17 +1,21 @@
 * {
-    margin: 5px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+html, body {
+    height: 100%; /* Ensure both html and body take full height */
 }
 
 body {
     background: #f4feff;
     color: green;
     font-family: Arial, sans-serif;
-    margin: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
 }
 
 .main {
