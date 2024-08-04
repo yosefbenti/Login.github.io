@@ -47,29 +47,36 @@ body {
     align-items: flex-start;
 }
 
-.logo-container {
+.logo-container, .logo-name {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 25%;
+    height: 100%; /* Set height to 100% */
+    position: absolute; /* Absolute positioning */
+    top: 22;
+    left: 0;
+    transform: translate(0, 0);
+    pointer-events: none; /* Prevent interference with rotating circle */
 }
 
+
 .logo {
-    width: 300px;
-    height: 300px;
+    width: 250px; /* Adjust width as needed */
+    height: 250px; /* Adjust height as needed */
     border-radius: 50%;
 }
 
 .academy-name {
-    margin-top: 20px; /* Space between the image and the text */
+    margin-top: 10px; /* Space between the image and the text */
     font-size: 1.5em;
     color: #333;
     text-align: center;
 }
 
 .svg-container {
+    position: relative; /* Relative positioning */
     display: flex;
     justify-content: center;
     align-items: center; /* Align center horizontally */
