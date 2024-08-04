@@ -2,37 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width= ,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="loginstyle.css">
 </head>
 <body>
-    <div class="main">
-        <div class="left">
-            <div class="imgcontainer">
-              <img  class="logo" src="Ethiopian_Acadamy_logo1.jpg" width="250px" height="250px"> 
+    <div class="container">
+        <div class="left-panel">
+            <div class="logo-container">
+              <img class="logo" src="Ethiopian_Acadamy_logo1.jpg" width="250" height="250" alt="Ethiopian Academy Logo"> 
             </div>
-              
         </div>
-        <div class="right">
-              <label class="welcome">Welcome!</label>
-              <label class="info">Please login to your account.</label>
-              <form class="form" action="">
-                    <div class="email">
-                      <label for="Email" class="emaillabel">Email</label>
-                      <div class="col-sm-10">
-                        <input type="email" class="emailinput" id="Email">
-                      </div>
-                    </div>
-                    <div class="emailpassword">
-                      <label for="Password" class="emailpassword">Password</label>
-                      <div class="col-sm-10">
-                        <input type="password" class="inputpassword" id="Password">
-                      </div>
-                    </div>
-                    <button type="submit" class="submitbutton">Sign in</button>
-              </form>
+        <div class="right-panel">
+            <div class="header">
+                <h1 class="welcome-message">Welcome!</h1>
+                <p class="info-message">Please login to your account.</p>
+            </div>
+            <form class="login-form" action="">
+                <div class="form-group">
+                    <label for="Email" class="form-label">Email</label>
+                    <input type="email" class="form-input" id="Email" required>
+                </div>
+                <div class="form-group">
+                    <label for="Password" class="form-label">Password</label>
+                    <input type="password" class="form-input" id="Password" required>
+                </div>
+                <button type="submit" class="submit-button">Login</button>
+            </form>
+            <div class="alternative-options">
+                <p class="alternative-text">or continue with_______________________________</p>
+                <p class="sign-up-text">Don't have an account? <a href="#" class="sign-up-link">Sign Up</a></p>
+            </div>
         </div>
-      </div>
+    </div>
 </body>
 </html>
